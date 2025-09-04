@@ -1,0 +1,375 @@
+<!DOCTYPE html>  <html lang="pl">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>Biologia</title>  
+
+<style>  
+    body {  
+      font-family: sans-serif;
+      color: #91A856;
+      background: #0A5E3F;          
+      margin: 0;  
+      padding: 20px;  
+    }  
+h1 {text-align:center; font-size:24px;}
+h2,
+h3 {font-size:18px; letter-spacing:1px;}
+
+.flashcards {  
+  display: grid;  
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
+  gap: 20px;  
+  max-width: 1000px;  
+  margin: 0 auto;  
+}  
+
+.flashcards h2,
+.flashcards h3 {
+    grid-column: 1/-1;
+    margin: 20px 0;
+    line-height:24px;
+    }
+      
+.card {  
+  background: #703BC4;  
+  border-radius: 10px;  
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);  
+  padding: 20px;  
+  cursor: pointer;  
+  transition: transform 0.3s;  
+  text-align: center;  
+  color: #403504        
+}  
+    
+
+.card:hover {  
+  transform: scale(1.05);  
+background: #934596;
+}  
+
+.card.flipped {  
+  background: #AB7537;  
+}  
+
+.front, .back {  
+  display: none;  
+}  
+
+.card .front {  
+  display: block;  
+}  
+
+.card.flipped .front {  
+  display: none;  
+}  
+
+.card.flipped .back {  
+  display: block;  
+}
+
+</style>
+
+</head>  
+<body>  
+  <h1>Biologia 3 klasa</h1>  
+       
+    <div class="flashcards"> 
+        <h2>1. Opowiedz o budowie i funkcjach DNA i RNA</h2>
+    <div class="card" onclick="this.classList.toggle('flipped')">  
+      <div class="front">Budowa DNA</div>  
+      <div class="back">
+          Cząsteczka DNA składa się z dwóch łańcuchów ułożonych równolegle do siebie i śrubowato skręconych wokół własnej osi. Ta struktura nazywa się <strong>podwójną helisą</strong><br>
+     • Nukleotydy składają się z:<br>
+     • Reszty kwasu fosforowego<br>
+     • Cukru pięciowęglowego - <strong>deoksyrybozy</strong><br>
+     • Jednej z czterech zasad azotowych (adeniny, tyminy, guaniny i cytozyny), które łączą się ze sobą według <strong>zasady kontementarności</strong>(A i T oraz C i G).<br>
+      Nukleotydy tworzące łańcuch są połączone ze sobą <strong>wiązaniami fosfodiestrowymi</strong>, natomiast oba łańcuchy DNA są połączone <strong>wiązaniami wodorowymi</strong>.<br>
+      </div>  
+    </div>  
+    <div class="card" onclick="this.classList.toggle('flipped')">  
+      <div class="front">Funkcje DNA</div>  
+     <div class="back">  
+     • Jest materiałem genetycznym wszystkich organizmów i niektórych wirusów<br>
+     • Odcinki DNA - geny zawierają informacje do syntezy białek i RNA<br>
+     • Jest nośnikiem informacji genetycznej - odpowiada za dziedziczenie cech</div>  
+     </div>     
+    <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Budowa RNA</div>   
+       <div class="back">Cząsteczka RNA jest jednoniciowa, chociaż w niektórych miejscach może tworzyć fragmenty dwuniciowe. <br>
+           Wtedy zgodnie z zasadą komplementarności cytozyna łączy się z guaniną, a adenina z <strong>uracylem</strong>.<br>
+       Nukleotydy składają się z:<br>
+       • Reszty kwasu fosforowego <br>
+       • Cukru pięciowęglowego - <strong>rybozy</strong><br>
+       • Jednej z zasad azotowych (adeniny, uracylu, cytozyny, guaniny)</div>      
+    </div>  
+    <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Funkcje RNA</div>  
+        <div class="back">
+        • rRNA po połączeniu z białkami tworzy <strong>rybosomy</strong>, na których zachodzi synteza białek.<br>
+        • mRNA przenosi informacje o budowie białka z jądra komórkowego na rybosomy.<br>
+        • tRNA transportuje aminokasy na rybosomy</div>  
+      </div>
+   <br>
+        <h2>2. Opowiedz o różnicach pomiędzy genotypem a fenotypem oraz między allelem a&nbsp;genem. Wyjaśnij na czym polega I prawo Mendla.</h2>     
+        
+        <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Genotyp a fenotyp</div>  
+        <div class="back">
+        • Genotyp to wszystkie geny organizmu, czyli jego materiał genetyczny<br>
+        • Fenotyp to cechy organizmu, które są widoczne lub mierzalne; na podstawie genotypu i czynników wewnętrznych</div>    
+      </div>  
+ <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Gen a allel</div>  
+     <div class="back">
+        • Gen to fragment DNA odpowiadający za daną cechę<br>
+        • Allel to różne wersje genów, różniące się między osobami</div>  
+     </div> 
+     
+        <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">I prawo Mendla</div>  
+    <div class="back">W każdej gamecie jest po jednym allelu każdego genu</div>   
+   </div> 
+        <br>
+        <h2>3. Wyjaśnij pojęcie inżynierii genetycznej. Opowiedz o sekwencjonowaniu DNA, PCR, elektroforezie DNA. Jakie są zastosowania technik inżynierii genetycznej w medycynie, kryminalistyce i diagnostyce chorób.</h2>
+          <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Inżynieria genetyczna</div>        
+    <div class="back">Dziedzina nauki zajmująca się opracowywaniem technik i metod, które umożliwiają wprowadzanie zmian w materiale genetycznym organizmów oraz wirusów.</div>  
+        </div>    
+       <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Sekwencjonowanie DNA</div>   
+      <div class="back">Sekwencjonowanie DNA to <strong>sprawdzanie</strong> w jakiej kolejności są ułożone nukleotydy w daym fragmencie DNA. Dzięki temu można dowiedzieć się, jaką funkcję ma ten fragment i czy są w nim mutacje. Sekwencjonować Można nie tylk ofragmenty DNA, ale też całe genomy. To pozwala porównać organizmy, znaleźć konkretne geny, a także planować zmiany w DNA - np. w badaniach lub leczeniu chorób.</div>  
+           </div>  
+    <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">PCR (<i>polymerase chain reaction</i>)</div>  
+     <div class="back">Metoda, która pozwala na szybkie powielanie dowolnych fragmentów DNA w laboratorium. Jest ona powszechnie stosowana w biotechnologii molekularnej. Jest ona przydatna zwałaszcza wtedy, gdy jest za mało materiału do przeprowadzenia badań.</div>  
+    </div>  
+    <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Elektroforeza</div>  
+      <div class="back">Służy do rozdzielania fragmentów DNA według ich długości. Dzięki temu można sprawdzić, czy w próbce znajduje się określony fragment, na przykład gen lub wirus. Długość fragmentu może również obecność utacji - jeśli ma on różną długość niż powinien, może to świadczyć o zmianie w materiale genetycznym. Elektroforeza jest również stosowana w <strong>kryminalistyce</strong> np. przy porównywaniu DNA osób. Dzięki tej metodzie można więc porządkować, analizować i porównywać DNA, co jest przydatne w medycynie, biologii, genetyce i wielu innych dziedzinach.</div>    
+        </div>  
+     <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Zastosowania technik inżynierii genetycznej</div>  
+      <div class="back">
+          • W <strong>medycynie sądowej </strong>pomagają np. ustalić ojcostwo albo pokrewieństwo - przydaje się to przy np. sprawach spadkowych. Dzięki DNA można też zidentyfikować osobę, nawet jeśli zmarła wiele lat temu.<br>
+          • W <strong>kryminalistyce</strong> na podstawie śladów z miejsca przestępstwa pozwalają stworzyć profil genetyczny ofiary albo sprawcy - wystarczy nawet niewielka ilość materiału, np. z odcisku palca.<br>
+          • W <strong>diagnostyce</strong> stosuje się je do wykrywania chorób. Można sprawdzić, czy ktoś ma mutację odpoiedzialną za daną chorobę, albo czy w jego organizmie znajduje się materiał genetyczny wirusa albo bakterii.</div>  
+         </div>  
+    
+    <h2>4. Na czym polega dobór naturalny? Jakie są mechanizmy działania doboru naturalnego, rodzaje, przykłady oraz znaczenie doboru naturalnego</h2>
+    
+    <div class="card"onclick="this.classList.toggle('flipped')">    
+        <div class="front">Dobór naturalny</div>  
+     <div class="back">Dobór naturalny to <strong>system</strong>, który polega na tym, że największe szanse na przeżycie i przekazanie genów ma ten osobnik, który jest najlepiej przystosowany do okoreślonych warunków środowiska.</div>  
+    </div>      
+    <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Mechanizmy działania doboru naturalnego</div>  
+    <div class="back">Według Darwina może on działać wtedy kiedy:<br>
+    • Osobniki cechuje nadmierna rozrodczość.<br>
+    • Między osobnikami danego gatunku występuje zmienność.<br>
+    • Osobniki walczą między sobą o ograniczone zasoby.</div>    
+        </div>  
+     <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Rodzaje doboru naturalnego</div>  
+     <div class="back">
+    • Dobór stabilizujący - utrwalenie w populacji cech pośrednich.<br>
+    • Dobór kierunkowy - utrwalenie w populacji jednej skrajnej wartości.<br>
+    • Dobór różnicującujący - wyeliminowanie z populacji osobników o średniej wartości cechy.<br>
+    • Dobór krewniaczy - altruizm wobec członków swojej rodziny aby przekazać dalej "swoje" geny.<br>
+    • Dobór płciowy - selekcjonowanie przez osobniki jednej płci. Prowadzi do <strong>dyformizmu płciowego</strong> i dużej konkurencji.</div>    
+     </div>   
+     <div class="card" onclick="this.classList.toggle('flipped')">    
+        <div class="front">Przykłady doboru naturalnego</div>  
+      <div class="back">
+    • Zięby Darwina - grupa kilkunastu gatunków muieszkających na wyspach Galapagos i połączonych jednym przodkiem, który wyemigrował na wyspy z Ameryki Południowej. W nowym środowisku było dostępne dużo rodzajów pokarmu i niewiele gatunków, z którymi zięby miały konkurować. Dzięki temu, w wyniku przystosowania do zdobywania różnego pokarmu powstały nowe gatunki zięb różniące się kształtami dziobów.<br>
+    • Melanizm przemysłowy to przykład doboru naturalnego w którym zmiana środowiska (zanieczyszczenie powietrza sadzą) spowodowała zmmianę częstości występowania alleli odpowiedzialnych za zabarwienie u ćmy Krępaka Brzozowca. W naturalnym, czystym środowisku jasne formy miały przewagę, ponieważ były mniej widoczne dla drapieżników. Po uprzemysłwieniu ciemne formy zyskały przewagę, ponieważ lepiej maskowały się na zabrudzonych pniach drzew. W efekcie ich udział w populacji znacznie wzrósł. A gdy powietrze stało się czystsze, znowu zaczęły przeważać jasne formy ćmy.<br></div>  
+     </div>      
+     
+    
+    <div class="card" onclick="this.classList.toggle('flipped')">     <div class="front">Znaczenie doboru naturalnego</div>  
+     <div class="back">Dobór naturalny prowadzi do utrwalenia tych cech, które są korzystne w danych warunkach środowiska, czyli tzw. cech adaptacyjnych. Allele odpowiadające za te cechy ,mogą już występować w populacji albo powstać w wyniku mutacji.</div>    
+     </div>   
+
+    <h2>5. Podaj definicję ekologii; wyjaśnij pojęcia: czynniki biotyczne, czynniki abiotyczne, nisza ekologiczna i siedlisko</h2>
+        
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Ekologia</div>  
+     <div class="back">Nauka o strukturze i funkcjonowaniu przyrody</div>    
+     </div>   
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Czynniki biotyczne i abiotyczne</div>  
+     <div class="back">Czynniki środowiska (ogółu czynników występujących na danym obszarze): <br>
+     • Czynniki biotyczne - czynniki ożywione jak zwierzęta, rośliny, protisty, bakterie i grzyby <br>
+     • Czynniki abiotyczne - czynniki nieożywione jak temperatura, zasolenie wód, pH gleby czy wilgotność powietrza</div>    
+     </div>  
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Nisza ekologiczna i siedlisko</div>  
+     <div class="back">
+         • Nisza ekologoiczna - wszystkie wymagania organizmu lub gatunku względem środowiska<br>
+        • Siedlisko - miejsce występowania organizmu, charakteryzujące się określonymi czynnikami abiotycznymi</div>    
+     </div>  
+
+<h2>6. Wyjaśnij czym jest kod genetyczny i jakie posiada on cechy.</h2>
+        
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Kod genetyczny</div>  
+     <div class="back">Sposób zapisu informacji o budowie białek w sekwencji kwasów nukleinowych (DNA lub RNA)</div>    
+     </div>  
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Cechy kodu genetycznego</div>  
+     <div class="back">Kod genetyczny jest:<br>
+     • Trójkowy - każde kolejne trzy nukleotydy kwasu nukleinowego oznaczają jeden aminokwas - tworzą jeden kodon<br>
+     • Jednoznaczny - jeden kodon oznacza wyłącznie jeden aminokwas<br>
+     • Zdegenerowany - jeden aminokwas może być kodowany przez więcej niż jeden kodon <br>
+     • Bezprzecinkowy - nie ma wolnych nukleotydów. Każdy nukleotyd wchodzi w skład jakiego kodonu.<br>
+     • Niezachodzący - nukleotyd wchodzący w skład jednego kodonu nie może być elementem kolejnego kodonu.<br>
+     • Uniwersalny - poza nielicznymi wyjątkami kodony u wszystkich organizmów oznaczają te same aminokwasy</div>    
+     </div>  
+
+        <h2>7. Opowiedz o II prawie Mendla, wyjaśnij w jaki sposób rozwiązuje się dwugenowe krzyżówki genetyczne zgodnie z II prawem Mendla</h2>
+    
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">II prawo Mendla</div>  
+     <div class="back">Podczas powstawania gamet, allele różnych genów dziedzicznych niezależnie od siebie rozdzielają się od gamet niezależnie od siebie.<br> Czyli cechy niepowiązane ze sobą genetycznie dziedziczą się niezależnie pod warunkiem, że znajdują się na innych chromosomach - Można dowolnie łączyć allele jednej cechy z allelami drugiej.</div>    
+     </div>  
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Sposób rozwiązywania dwugenowych krzyżówek genetycznych</div>  
+     <div class="back">
+    • Na górze i po lewej wpisujemy wsystkie możliwe gamety (kombinacje alleli). Dla dwóch genów, każdy z dwoma allelami, gamety to AB,Ab,aB,ab<br>
+    • Tworzymy tabelę 4x4, gdzie w każdej kratce łączymy gamety od rodzica z góry i z boku<br>
+    • Wypełniamy tabelę, tworząc genotypy potomstwa<br>
+    • Liczymy ile razy pojawił się dany genotyp<br>
+    • Obliczamy prawdopodobieństwo wystąpienia danego genotypu lub fenotypu dzieląc ilość danej kombinacji przez 16 (4x4)</div>    
+     </div>  
+
+        <h2>8. Omów definicję GMO i wyjaśnij, czym są organizmy transgenczne, w jaki sposób się je otrzymuje oraz jakie są korzyści i zagrożenia wynikające z GMO</h2>
+ 
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Definicja GMO</div>  
+     <div class="back">GMO to organizm zmodyfikowany genetycznie, czyli taki, którego materiał genetyczny został zmieniony za pomocą inżynieri genetycznej</div>    
+     </div>  
+
+     <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Organizmy transgeniczne</div>  
+     <div class="back">Organizmy, który w swoim genomie mają obcy materiał genetyczny</div>    
+     </div>  
+
+     <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Jak powstają organizmy transgeniczne</div>  
+     <div class="back">
+    • Bakterie - Na podstawie mRNA genu jest tworzone DNA. Jest ono wprowadzane do plazmidu (małej, kolistej cząsteczki DNA zdolnej do powielania się), który umożliwia ekspresję genu u bakterii. Taki plazmid jest wprowadzany do bakterii, a zmodyfikowana genetycznie bakteria produkuje nowe białko<br>
+    • Rośliny - mikroskopijne kulki złota się pokrywa cząsteczkami obcego DNA, a następnie wstrzeliwuje się je w kierunku komórek rośliny. Część komórek rośliny wbudowuje obcy gen w swój genom, a ze zmodyfikowanych komórek hoduj się nowe rośliny o nowych cechach<br>
+    • Zwierzęta - do komórek zaroskowych wprowadza się obcy gen, który komórki wbudowują w swój genom. Zmodyfikowane komórki wprowadza się do zarodka, który przenosi się do macicy. Rodzą się zwierzęta, które mają tylko część zmodyfikowanych komórek i krzyżuje się je aż do uzyskania homozygoty pod względem nowej cechy.</div>    
+     </div>  
+
+     <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Korzyści korzystania z GMO</div>  
+     <div class="back">
+     • Walka z niedożywieniem na świecie - dzięki modyfikacji DNA roślin uprawnych mogą powstawać bardziej odżywcze odmiany.<br>
+     • Postęp w badaniach naukowych - genetycznie zmodyfikowane ssaki wykorzystuje się jako modele, dzięki którym badać przebieg chorób. <br>
+     • Użyteczne gospodarczo odmiany i rasy - dzięki inżynierii genetycznej uzyskujemy bardziej odporne rośliny i bardziej odżywcze zwierzęta <br>
+     • Produkcja żywności - w przemyśle spożywczym GMO stosuje się do produkcji enzymów, witamin i aromatów np. podpuszczki do serów <br>
+     • Ochrona środowiska - GMO może służyć do oczyszczana środowiska np. gleb. Stosuje się je także do wytwarzania niektórych biodegradowalnych polimerów. <br>
+     • Ochrona zdrowia - GMO stosuje się do produkcji leków (np. insuliny, przeciwciał) i jadalnych szczepionek. Trwają też prace nad pozyskiwaniem narządów do przeszczepów od zmodyfikowanych świń </div>    
+     </div>  
+
+     <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Zagrożenia wynikające z korzystania z GMO</div>  
+     <div class="back">
+    • Wpływ na zdrowie - istnieją obawy, że żywność zawierająca GMO może być przyczyną różnych chorób. Innym zagrożeniem może być rozprzestrzenianie się odpornych na środki chwastobójcze roślin. <br>
+    • Wpływ na bioróżnorodność - Zmodyfikowane rośliny mogą rozsiewać się w środowisku naturalnym i wyprzeć rodzime gatunki A w wyniku krzyżowania się ze spokrewnionymi roślinami mogą powstać odporniejsze chwasty. <br>
+    • Wpływ na rolnictwo - przez rozsiewanie się nasion zmodyfikowanych roślin może nie być możliwy natychmiastowy powrót do uprawy niemodyfikowanych odmian (uzależnienie gospodarstw od koncernów biotechnologicznych) <br></div>    
+     </div>  
+<h2>9. Wyjaśnij pojęcie tolerancji ekologicznej, zakresu tolerancji ekologicznej, bioindykatora</h2>
+     <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Tolerancja ekologiczna</div>  
+     <div class="back">Zdolność przystosowywania się organizmu do zmian zachodzących w środowisku bez szkody dla jego życia i rozwoju.</div>    
+     </div>  
+
+     <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Zakres tolerancji ekologicznej</div>  
+     <div class="back">Przedział wartości określonego czynnika, w którym dany organizm może przetrwać. (przyp. red.): Tzn. istnieje minimalna i maksymalna wartość np. temperatury i dany organizm może tylko w niej przetrwać.</div>    
+     </div>  
+
+     <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Bioindykatory</div>  
+     <div class="back">Organizmy, które mają wąski zakres tolerancji ekologicznej względem określonego czynnika, za pomocą którego można ocenić stan środowiska. np. Można oceniać stan natlenienia wody w zbiorniku wpuszczając tam pstrąga potokowego i sprawdzając czy przeżyje. Jeśli tak, to woda jest natleniona.</div>    </div>  
+<h2>10. Opowiedz o zasadach dziedziczenia cech związanych z dominacją pełną i niepełną. Wyjaśnij takie pojęcia jak kodominacja, allele wielokrotne, geny kumultatywne, geny dopełniające</h2>
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Dominacja pełna</div>  
+     <div class="back">
+    • Jeśli jeden z alleli jest dominujący, to w heterozygocie ujawnia sie cecha dominująca.<br>
+    • Cecha recesywna pojawia się jedynie w homozygocie recesywnej.<br></div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Dominacja niepełna</div>  
+     <div class="back">Heterozygota daje pośrednią cechę, a homozygota skrajną.</div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Kodominacja</div>  
+     <div class="back">Sytuacja w genetyce, kiedy nie ma ani dominujących, ani recesywnych alleli, więc obie cechy wpływają na fenotyp.</div>    
+     </div>
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Allele wielokrotne</div>  
+     <div class="back">Fenomen w którym w jednym gatunku istnieją wiecej niż dwa allele genu, ale jeden osobnik może mieć ich tylko dwa. Przykładem jest choćby stnienie więcej niż dwóch grup krwi wśród ludzi. Istnieje grupa 0, A, B oraz połączenie dwóch ostatnich "AB" (0 występuje jedynie samodzielnie).("I feel so lonely/ I got nobody on my own")</div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Geny kumultatywne</div>  
+     <div class="back">Wiele genów wpływających na jedną cechę. Coś jak z wzrostem. Nie istnieje jeden gen wzrostu, który ma allele typu 1,50 m i 2 m. Określony wzrost jest uwarunkowany, przez wiele niewielkich i różnych, sumujących się genów.</div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">Geny dopełniające</div>  
+     <div class="back">Geny dopełniające współdziałają w tworzeniu jednej cechy np. barwnika warunkującego ciemną sierść, który powstaje jedynie w obecności obu alleli dominujących (A i B). Przy krzyżowaniu podwójnych heterozygot stosunek fenotypów wynosi 9:7, czyli średnio, na 16 potomków 9 z nich będzie miało czarną sierść, a 7 jasną. </div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">front</div>  
+     <div class="back">tył</div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">front</div>  
+     <div class="back">tył</div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">front</div>  
+     <div class="back">tył</div>    
+     </div> 
+
+     <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">front</div>  
+     <div class="back">tył</div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">front</div>  
+     <div class="back">tył</div>    
+     </div> 
+
+    <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="front">front</div>  
+     <div class="back">tył</div>    
+     </div>     
+        
+      <audio id="clickSound" src="clicksound.wav" preload="auto"></audio>  <script>  
+  const clickSound = document.getElementById("clickSound");  
+  
+  document.querySelectorAll(".card").forEach(card => {  
+    card.addEventListener("click", () => {  
+      clickSound.currentTime = 0; // resetuj, jeśli ktoś szybko klika  
+      clickSound.play();  
+    });  
+  });  
+</script>  </body>  
+  </html>
+  
